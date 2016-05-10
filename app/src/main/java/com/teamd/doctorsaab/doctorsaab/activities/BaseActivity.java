@@ -9,7 +9,7 @@ import com.teamd.doctorsaab.doctorsaab.R;
 /**
  * Created by hereshem on 4/11/16.
  */
-public class gitBaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
