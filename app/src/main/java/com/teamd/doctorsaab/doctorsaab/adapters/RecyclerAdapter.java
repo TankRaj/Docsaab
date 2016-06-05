@@ -14,8 +14,10 @@ import com.teamd.doctorsaab.doctorsaab.R;
  */
 public class RecyclerAdapter extends  RecyclerView.Adapter<RecyclerViewHolder> {
 
-    String [] name={"Androidwarriors","Stackoverflow","Developer Android","AndroidHive",
-            "Slidenerd","TheNewBoston","Truiton","HmkCode","JavaTpoint","Javapeper"};
+    String [] name={"Grandy Hospital","Norvic Hospital","Bir Hospital","Aum Hospital",
+            "Falano Hospital","Dhiskano Hospital","My Hospital","Your Hospital","Our Hospital","Best Hospital"};
+    String [] contacts = {"01444444","01444444","01444444","01444444","01444444","01444444","01444444","01444444","01444444","01444444"};
+    String [] speciality = {"General","General","General","General","General","General","General","General","General","General" };
     Context context;
     LayoutInflater inflater;
     public RecyclerAdapter(Context context) {
@@ -36,6 +38,7 @@ public class RecyclerAdapter extends  RecyclerView.Adapter<RecyclerViewHolder> {
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
 
         holder.tv1.setText(name[position]);
+        holder.tv2.setText(contacts[position]);
         holder.imageView.setOnClickListener(clickListener);
         holder.imageView.setTag(holder);
     }

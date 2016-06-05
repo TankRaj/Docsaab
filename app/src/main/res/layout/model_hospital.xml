@@ -2,29 +2,35 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view_hospital"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:layout_marginBottom="16dp"
     android:background="#C5CAE9"
+    android:elevation="8dp"
     android:foreground="?attr/selectableItemBackground"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:orientation="horizontal"
+        android:id="@+id/con_session"
         >
 
 
 
         <ImageView
             android:id="@+id/ic_hospital"
-            android:layout_width="40dp"
+            android:layout_width="64dp"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:background="@color/h_deep_purple_200"
+            android:background="#b2ebf2"
             android:scaleType="fitCenter"
-            android:src="@drawable/icon_1" />
+            android:src="@drawable/h_image" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -35,11 +41,10 @@
             android:layout_alignParentTop="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
             android:layout_toRightOf="@+id/ic_hospital"
             android:text="Hospital Name"
             android:textColor="#000000"
-        android:background="@color/h_blue_600"
+            android:background="@color/h_blue_600"
             android:textStyle="bold"
             android:textSize="16sp" />
 
@@ -48,7 +53,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/hospital_name"
-            android:layout_marginLeft="16dp"
             android:layout_toRightOf="@+id/ic_hospital"
             android:textColor="#000000"
             android:ellipsize="end"
@@ -58,5 +62,48 @@
             android:textAppearance="?attr/textAppearanceListItem"
             android:textSize="12sp" />
         </LinearLayout>
+
     </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/con_session"
+        android:background="#b2ebf2"
+        android:orientation="horizontal">
+
+        <TextView
+        android:id="@+id/phone"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="01484848"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#aa66ee"/>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="www.example.com"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:background="#aa66ee"/>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:text="example@mymail.com"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:background="#aa66ee"/>
+    </LinearLayout>
+ </LinearLayout>
+
 </android.support.v7.widget.CardView>

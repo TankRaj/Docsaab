@@ -9,9 +9,6 @@ import android.widget.TextView;
 
 import com.teamd.doctorsaab.doctorsaab.R;
 
-/**
- * Created by kundan on 10/26/2015.
- */
 public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
     TextView tv1,tv2;

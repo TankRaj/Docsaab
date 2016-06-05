@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.hospitals.HospitalsActivity"/>
+        <activity android:name=".activities.HospitalsActivity" />
+        <activity
+            android:name=".activities.ChatBot"
+            android:label="@string/title_activity_chat_bot"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

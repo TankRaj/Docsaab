@@ -1,4 +1,4 @@
-package com.teamd.doctorsaab.doctorsaab.activities.hospitals;
+package com.teamd.doctorsaab.doctorsaab.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
