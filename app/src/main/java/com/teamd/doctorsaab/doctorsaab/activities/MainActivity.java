@@ -41,14 +41,16 @@ public class MainActivity extends BaseActivity {
             public void onItemClick(AdapterView parent, View v, int position1, long id) {
                 switch (position1) {
                     case 0:
-                        Intent intent1 = new Intent(getApplicationContext(),ChatBot.class);
-                        startActivity(intent1);
+                        Intent intent0 = new Intent(getApplicationContext(),ChatBot.class);
+                        startActivity(intent0);
                         break;
                     case 1:
-                        Intent intent = new Intent(getApplicationContext(), HospitalsActivity.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(getApplicationContext(), HospitalsActivity.class);
+                        startActivity(intent1);
                         break;
                     case 2:
+                        Intent intent2 = new Intent(getApplicationContext(), SpecialistsActivity.class);
+                        startActivity(intent2);
                         break;
                     case 3:
                         break;

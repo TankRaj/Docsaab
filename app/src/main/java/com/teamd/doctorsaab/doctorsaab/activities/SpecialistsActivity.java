@@ -8,20 +8,17 @@ import android.support.v7.widget.RecyclerView;
 import com.teamd.doctorsaab.doctorsaab.R;
 import com.teamd.doctorsaab.doctorsaab.adapters.RecyclerAdapterHospital;
 
-/**
- * Created by Tankraj on 5/8/2016.
- */
-public class HospitalsActivity extends BaseActivity {
+public class SpecialistsActivity extends BaseActivity {
     RecyclerView recyclerView;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospitals);
+        setContentView(R.layout.activity_specialists);
         loadToolBar();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Hospitals");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setTitle("Specialists");
+
 
 
         recyclerView= (RecyclerView) findViewById(R.id.recycler_hospitals);
@@ -31,5 +28,4 @@ public class HospitalsActivity extends BaseActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
 }

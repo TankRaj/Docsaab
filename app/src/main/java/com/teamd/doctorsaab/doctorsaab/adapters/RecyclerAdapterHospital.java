@@ -12,7 +12,7 @@ import com.teamd.doctorsaab.doctorsaab.R;
 /**
  * Created by kundan on 10/26/2015.
  */
-public class RecyclerAdapter extends  RecyclerView.Adapter<RecyclerViewHolder> {
+public class RecyclerAdapterHospital extends  RecyclerView.Adapter<RecyclerViewHolderHospital> {
 
     String [] name={"Grandy Hospital","Norvic Hospital","Bir Hospital","Aum Hospital",
             "Falano Hospital","Dhiskano Hospital","My Hospital","Your Hospital","Our Hospital","Best Hospital"};
@@ -20,22 +20,22 @@ public class RecyclerAdapter extends  RecyclerView.Adapter<RecyclerViewHolder> {
     String [] speciality = {"General","General","General","General","General","General","General","General","General","General" };
     Context context;
     LayoutInflater inflater;
-    public RecyclerAdapter(Context context) {
+    public RecyclerAdapterHospital(Context context) {
         this.context=context;
         inflater=LayoutInflater.from(context);
     }
 
 
     @Override
-    public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerViewHolderHospital onCreateViewHolder(ViewGroup parent, int viewType) {
         View v=inflater.inflate(R.layout.model_hospital, parent, false);
 
-        RecyclerViewHolder viewHolder=new RecyclerViewHolder(v);
+        RecyclerViewHolderHospital viewHolder=new RecyclerViewHolderHospital(v);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerViewHolderHospital holder, int position) {
 
         holder.tv1.setText(name[position]);
         holder.tv2.setText(contacts[position]);
@@ -43,11 +43,13 @@ public class RecyclerAdapter extends  RecyclerView.Adapter<RecyclerViewHolder> {
         holder.imageView.setTag(holder);
     }
 
+
+
     View.OnClickListener clickListener=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
-            RecyclerViewHolder vholder = (RecyclerViewHolder) v.getTag();
+            RecyclerViewHolderHospital vholder = (RecyclerViewHolderHospital) v.getTag();
             int position = vholder.getPosition();
 
             Toast.makeText(context,"This is position "+position,Toast.LENGTH_LONG ).show();
