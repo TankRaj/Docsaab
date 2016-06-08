@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     android:paddingTop="4dp"
     android:orientation="vertical">
 
@@ -9,7 +10,6 @@
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#aaffeedd"
         android:dividerHeight="0dp"
         android:horizontalSpacing="2dp"
         android:fitsSystemWindows="true"

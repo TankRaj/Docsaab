@@ -23,12 +23,12 @@ public class GridListAdapter extends BaseAdapter {
     public GridListAdapter(Context context) {
         inflater = LayoutInflater.from(context);
 
-        items.add(new Item("Chatbot",R.drawable.one));
-        items.add(new Item("Hospitals", R.drawable.two));
-        items.add(new Item("Specialists", R.drawable.three));
-        items.add(new Item("Natural Therapy", R.drawable.four));
-        items.add(new Item("Ayurveda", R.drawable.icon_1));
-        items.add(new Item("About Us", R.drawable.icon_1));
+        items.add(new Item("Chatbot",R.drawable.ic_chatbot));
+        items.add(new Item("Hospitals", R.drawable.ic_hospital));
+        items.add(new Item("Specialists", R.drawable.ic_specialist));
+        items.add(new Item("Natural Therapy", R.drawable.ic_natural));
+        items.add(new Item("Ayurveda", R.drawable.ic_ayurveda));
+        items.add(new Item("About Us", R.drawable.ic_about));
     }
 
     @Override
