@@ -9,7 +9,7 @@
     <include layout="@layout/toolbar"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_hospitals"
+        android:id="@+id/recycler_specialists"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="18dp" />

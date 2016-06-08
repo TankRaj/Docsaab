@@ -1,35 +1,32 @@
 package com.teamd.doctorsaab.doctorsaab.activities;
 
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.teamd.doctorsaab.doctorsaab.R;
 import com.teamd.doctorsaab.doctorsaab.adapters.RecyclerAdapterHospital;
+import com.teamd.doctorsaab.doctorsaab.adapters.RecyclerAdapterTipsTricks;
 
-/**
- * Created by Tankraj on 5/8/2016.
- */
-public class HospitalsActivity extends BaseActivity {
+public class TipsTricksActivity extends BaseActivity {
     RecyclerView recyclerView;
 
-
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospitals);
+        setContentView(R.layout.activity_tipstricks);
+
         loadToolBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Hospitals");
+        getSupportActionBar().setTitle("Tips And Tricks");
 
 
-        recyclerView= (RecyclerView) findViewById(R.id.recycler_specialists);
+        recyclerView= (RecyclerView) findViewById(R.id.recycler_tips);
 
-        RecyclerAdapterHospital adapter=new RecyclerAdapterHospital(this);
+        RecyclerAdapterTipsTricks adapter=new RecyclerAdapterTipsTricks(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
 }

@@ -27,7 +27,7 @@ public class RecyclerAdapterSpecialists extends  RecyclerView.Adapter<RecyclerVi
 
     @Override
     public RecyclerViewHolderSpecialists onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v=inflater.inflate(R.layout.model_hospital, parent, false);
+        View v=inflater.inflate(R.layout.model_specialists, parent, false);
 
         RecyclerViewHolderSpecialists viewHolder=new RecyclerViewHolderSpecialists(v);
         return viewHolder;

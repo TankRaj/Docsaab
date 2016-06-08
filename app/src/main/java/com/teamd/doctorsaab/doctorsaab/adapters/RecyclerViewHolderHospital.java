@@ -15,8 +15,8 @@ public class RecyclerViewHolderHospital extends RecyclerView.ViewHolder {
     public RecyclerViewHolderHospital(View itemView) {
         super(itemView);
 
-        tv1= (TextView) itemView.findViewById(R.id.hospital_name);
-        tv2= (TextView) itemView.findViewById(R.id.expertise);
+        tv1= (TextView) itemView.findViewById(R.id.tips_name);
+        tv2= (TextView) itemView.findViewById(R.id.category);
         imageView= (ImageView) itemView.findViewById(R.id.ic_specialist);
 
     }

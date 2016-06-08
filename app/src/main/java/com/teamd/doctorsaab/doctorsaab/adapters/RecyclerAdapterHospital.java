@@ -1,6 +1,7 @@
 package com.teamd.doctorsaab.doctorsaab.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.teamd.doctorsaab.doctorsaab.R;
+import com.teamd.doctorsaab.doctorsaab.activities.HospitalDetailActivity;
+import com.teamd.doctorsaab.doctorsaab.activities.HospitalsActivity;
+import com.teamd.doctorsaab.doctorsaab.activities.SpecialistsActivity;
 
 /**
  * Created by kundan on 10/26/2015.
@@ -49,10 +53,12 @@ public class RecyclerAdapterHospital extends  RecyclerView.Adapter<RecyclerViewH
         @Override
         public void onClick(View v) {
 
-            RecyclerViewHolderHospital vholder = (RecyclerViewHolderHospital) v.getTag();
-            int position = vholder.getPosition();
+            Intent intent1 = new Intent(context, HospitalDetailActivity.class);
+           context. startActivity(intent1);
 
-            Toast.makeText(context,"This is position "+position,Toast.LENGTH_LONG ).show();
+
+//            RecyclerViewHolderHospital vholder = (RecyclerViewHolderHospital) v.getTag();
+//            int position = vholder.getPosition();
 
         }
     };

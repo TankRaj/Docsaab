@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.teamd.doctorsaab.doctorsaab.R;
-import com.teamd.doctorsaab.doctorsaab.adapters.RecyclerAdapterHospital;
+import com.teamd.doctorsaab.doctorsaab.adapters.RecyclerAdapterSpecialists;
 
 public class SpecialistsActivity extends BaseActivity {
     RecyclerView recyclerView;
@@ -16,14 +16,14 @@ public class SpecialistsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_specialists);
         loadToolBar();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setTitle("Specialists");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Specialists");
 
 
 
-        recyclerView= (RecyclerView) findViewById(R.id.recycler_hospitals);
+        recyclerView= (RecyclerView) findViewById(R.id.recycler_specialists);
 
-        RecyclerAdapterHospital adapter=new RecyclerAdapterHospital(this);
+        RecyclerAdapterSpecialists adapter=new RecyclerAdapterSpecialists(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

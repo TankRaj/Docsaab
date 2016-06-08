@@ -53,6 +53,8 @@ public class MainActivity extends BaseActivity {
                         startActivity(intent2);
                         break;
                     case 3:
+                        Intent intent3 = new Intent(getApplicationContext(), TipsTricksActivity.class);
+                        startActivity(intent3);
                         break;
                     default:
                         break;

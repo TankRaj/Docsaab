@@ -3,6 +3,7 @@
     android:id="@+id/card_view_hospital"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="4dp"
     android:layout_marginBottom="8dp"
     android:background="#C5CAE9"
     android:elevation="4dp"
@@ -21,29 +22,15 @@
             android:orientation="horizontal">
 
 
-            <ImageView
-                android:id="@+id/ic_specialist"
-                android:layout_width="64dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:background="#b2ebf2"
-                android:scaleType="fitCenter"
-                android:src="@drawable/h_image" />
-            <ImageView
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000000"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="2dp"
                 android:background="@color/colorAccent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="2dp">
 
                 <TextView
-                    android:id="@+id/hospital_name"
+                    android:id="@+id/tips_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/h_blue_600"
@@ -51,38 +38,42 @@
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Speciality\t :"
                         android:textColor="#000000"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
 
 
-                <TextView
-                    android:id="@+id/expertise"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="General"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="General"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Location\t :"
                         android:textColor="#000000"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
 
 
                     <TextView
@@ -100,7 +91,20 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#141414"/>
+            android:background="#dcdcdc" />
+
+        <ImageView
+            android:id="@+id/ic_specialist"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#b2ebf2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/h_background" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,36 +113,46 @@
             android:background="@color/colorAccent"
             android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/stat_sys_phone_call" />
+
             <TextView
                 android:id="@+id/phone"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="4dp"
                 android:text="01484848"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
 
             <ImageView
-                android:layout_width="1dp"
+                android:layout_width="20dp"
                 android:layout_height="match_parent"
-                android:background="#334488" />
+                android:src="@android:drawable/ic_menu_mapmode"/>
 
             <TextView
                 android:id="@+id/website"
-                android:layout_width="120dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
                 android:text="www.example.com"
                 android:textColor="#000000"
                 android:textSize="12sp" />
 
             <ImageView
-                android:layout_width="1dp"
+                android:layout_width="20dp"
                 android:layout_height="match_parent"
-                android:background="#334488" />
+                android:src="@android:drawable/ic_dialog_email" />
 
             <TextView
                 android:id="@+id/email"
-                android:layout_width="152dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="example@mymail.com"
                 android:textColor="#000000"
                 android:textSize="12sp" />

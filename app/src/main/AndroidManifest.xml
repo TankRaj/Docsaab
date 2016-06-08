@@ -20,7 +20,9 @@
             android:name=".activities.ChatBot"
             android:label="@string/title_activity_chat_bot"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activities.SpecialistsActivity"></activity>
+        <activity android:name=".activities.SpecialistsActivity" />
+        <activity android:name=".activities.HospitalDetailActivity" />
+        <activity android:name=".activities.TipsTricksActivity"></activity>
     </application>
 
 </manifest>
