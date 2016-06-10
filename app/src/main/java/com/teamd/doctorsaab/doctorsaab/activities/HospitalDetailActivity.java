@@ -16,10 +16,20 @@ public class HospitalDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_detail);
-        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbarLayout.setTitle("My Hospital");
-        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
-        collapsingToolbarLayout.setExpandedTitleColor(Color.BLACK);
+//        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+//        collapsingToolbarLayout.setTitle("My Hospital");
+//        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
+//        collapsingToolbarLayout.setExpandedTitleColor(Color.BLACK);
+
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbar.setTitle("My Hospital");
+        collapsingToolbar.setCollapsedTitleTextColor(Color.BLACK);
+        collapsingToolbar.setExpandedTitleColor(Color.BLACK);
         
 //        loadToolBar();
 //        setSupportActionBar((CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar));

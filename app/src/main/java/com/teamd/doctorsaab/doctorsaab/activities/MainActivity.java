@@ -24,16 +24,6 @@ public class MainActivity extends BaseActivity {
         gridView.setAdapter(new GridListAdapter(this));
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "my view", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 

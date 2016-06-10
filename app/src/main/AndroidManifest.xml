@@ -18,10 +18,13 @@
         <activity android:name=".activities.HospitalsActivity" />
         <activity
             android:name=".activities.ChatBot"
+            android:parentActivityName=".activities.MainActivity"
             android:label="@string/title_activity_chat_bot"
             android:theme="@style/AppTheme" />
         <activity android:name=".activities.SpecialistsActivity" />
-        <activity android:name=".activities.HospitalDetailActivity" />
+        <activity
+            android:name=".activities.HospitalDetailActivity"
+            android:parentActivityName=".activities.HospitalsActivity" />
         <activity android:name=".activities.TipsTricksActivity"></activity>
     </application>
 

@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="4dp"
     android:background="#C5CAE9"
-    android:elevation="4dp"
+    android:elevation="8dp"
     android:foreground="?attr/selectableItemBackground"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -25,7 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="#8822aa88"
                 android:orientation="vertical"
                 android:paddingLeft="2dp">
 
@@ -33,7 +33,7 @@
                     android:id="@+id/tips_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/h_blue_600"
+                    android:background="#dd22aa88"
                     android:text="Hospital Name"
                     android:textColor="#000000"
                     android:textSize="16sp"
@@ -65,6 +65,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
                     android:orientation="horizontal">
 
                     <TextView
@@ -88,6 +89,7 @@
 
         </LinearLayout>
 
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -110,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/con_session"
-            android:background="@color/colorAccent"
+            android:background="#4422aa88"
             android:orientation="horizontal">
 
             <ImageView

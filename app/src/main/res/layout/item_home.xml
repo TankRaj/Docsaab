@@ -25,6 +25,7 @@
         android:layout_marginTop="26dp"
         android:gravity="center"
         android:text="Title"
+        android:textStyle="bold"
         android:textColor="@color/h_white_1000"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 </RelativeLayout>

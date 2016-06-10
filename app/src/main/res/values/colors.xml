@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/h_green_500</color>
-    <color name="colorPrimaryDark">@color/h_green_700</color>
-    <color name="colorPrimaryLight">@color/h_green_300</color>
+    <!--<color name="colorPrimary">@color/h_green_500</color>-->
+    <!--<color name="colorPrimaryDark">@color/h_green_700</color>-->
+    <!--<color name="colorPrimaryLight">@color/h_green_300</color>-->
     <color name="colorAccent">@color/h_blue_200</color>
     <color name="textColorPrimary">@color/h_blue_900</color>
-    <color name="dashboardBackground">@color/h_orange_400</color>
+    <!--<color name="dashboardBackground">@color/h_orange_400</color>-->
     <color name="navigationBarColor">#000000</color>
 </resources>

@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.teamd.doctorsaab.doctorsaab.R;
 import com.teamd.doctorsaab.doctorsaab.activities.HospitalDetailActivity;
+import com.teamd.doctorsaab.doctorsaab.helpers.Random;
 
 /**
  * Created by TankRaj on 10/26/2015.
@@ -40,6 +42,10 @@ public class RecyclerAdapterTipsTricks extends RecyclerView.Adapter<RecyclerView
     public void onBindViewHolder(RecyclerViewHolderTipsTricks holder, int position) {
 
         holder.tv1.setText(name[position]);
+        Glide.with(holder.imageView.getContext())
+                .load(Random.getRandomTankDrawable())
+                .fitCenter()
+                .into(holder.imageView);;
         holder.tv1.setOnClickListener(clickListener);
         holder.tv1.setTag(holder);
     }
